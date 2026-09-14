@@ -10,16 +10,43 @@ package com.mycompany.project;
  */
 public class Buku {
     
- String judul;
- String penulis;
- int tahunTerbit; 
+ private String judul;
+ private String penulis;
+ private int tahunTerbit; 
  
  Buku(String judul, String penulis, int tahunTerbit) {
     this.judul = judul;
     this.penulis = penulis;
     this.tahunTerbit = tahunTerbit;
-    
+ }
+    public String getJudul() {
+    return judul;
 }
+
+public String getPenulis() {
+    return penulis;
+}
+
+public int getTahunTerbit() {
+    return tahunTerbit;
+}
+
+public void setJudul(String judul) {
+    this.judul = judul;
+}
+
+public void setPenulis(String penulis) {
+    this.penulis = penulis;
+}
+
+public void setTahunTerbit(int tahunTerbit) {
+    if (tahunTerbit >= 0) {
+        this.tahunTerbit = tahunTerbit;
+    } else {
+        System.out.println("Tahun terbit tidak boleh negatif.");
+    }
+}
+    
  
  void tampilkanInfo() {
     System.out.println("=== DATA BUKU ===");

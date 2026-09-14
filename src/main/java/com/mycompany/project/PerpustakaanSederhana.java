@@ -14,7 +14,15 @@ public class PerpustakaanSederhana {
         
         Buku buku1 = new Buku("Laskar Pelangi", "Andrea Hirata", 2005);
         
+        buku1.setJudul("Bumi");
+        buku1.setPenulis("Tere Liye");
+        buku1.setTahunTerbit(2014);
+        
         buku1.tampilkanInfo();
+        
+        System.out.println("Judul melalui Getter : " + buku1.getJudul());
+        System.out.println("Penulis melalui Getter : " + buku1.getPenulis());
+        System.out.println("Tahun melalui Getter : " + buku1.getTahunTerbit());
 
 }
 }
